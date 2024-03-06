@@ -1,0 +1,61 @@
+.flex{
+  display: flex;
+}
+.items-center{
+  justify-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+
+.bg-grey{
+  background-color:#0c0c0c;
+}
+.invert{
+  filter:invert(1);
+}
+.bg-black{
+  background-color: black;
+}
+.radius{
+  border-radius: 7px;
+}
+.p-1{
+padding: 19px;
+color:white;
+background-color: rgba(4, 4, 13, 0.848);
+}
+.m-1{
+  margin-top: 7px;
+}
+.m-4{
+  margin-bottom: 7px;
+}
+
+
+
+
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #504343 #121212; 
+  background-color: rgb(22, 0, 221);
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* WebKit */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2d2d2d; /* Dark gray color for the thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #121212; /* Dark background color for the track */
+}
+.curPoint{
+  cursor: pointer;
+}

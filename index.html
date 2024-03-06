@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeVerse</title>
+    <link rel="icon" type="image/x-icon" href="img/fevicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utitlty.css" />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left">
+        <div class="home radius p-1">
+          <ul>
+            <li class="cancel">
+              <!-- <div class="flex logo logo-"> -->
+              <img class="invert" src="img/log.svg" alt="logo" />
+              <h1 style="color: rgb(255, 0, 0)">VibeVerse</h1>
+              <!-- </div> -->
+
+              <img class="closeWind" src="img/cancel.svg" alt="" />
+            </li>
+            <li class="curPoint">
+              <img class="invert" src="img/home.svg" alt="home" />Home
+            </li>
+            <li class="curPoint">
+              <img
+                class="invert opacityLow"
+                src="img/search.svg"
+                alt="search"
+              />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey radius p-1 m-1 lb">
+          <div class="lib flex">
+            <div class="library-logo flex">
+              <img class="invert libsix" src="img/library.svg" alt="Library" />
+              <h3>Songs Library</h3>
+            </div>
+
+            <img class="invert libsix plus" src="img/plus.svg" alt="" />
+          </div>
+          <div class="songs-list">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="right">
+        <div class="right-div bg-grey m-1 radius">
+          <div class="head-right flex">
+            <div class="ham-Undo-redo flex">
+              <div class="hamburger flex">
+                <img class="hamburg" src="img/hamburger.svg" />
+              </div>
+              <div class="UndoRedo flex">
+                <div class="round flex">
+                  <img
+                    class="invert libsix flex"
+                    src="img/lesserAndGreater.svg"
+                  />
+                </div>
+                <div class="round flex">
+                  <img
+                    class="invert libsix r2 flex"
+                    src="img/lesserAndGreater.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex sinLog">
+              <div class="curPoint sin">Sign up</div>
+              <div class="curPoint log flex">Log in</div>
+            </div>
+          </div>
+
+          <div class="right-body">
+            <div class="right-body-footer flex">
+              <h2>VibeVerse Playlists</h2>
+
+              <h4>Show all</h4>
+            </div>
+
+            <div class="container2"></div>
+          </div>
+        </div>
+        <center>
+          <div class="playPauseFooter">
+            <div class="abovePlyPause flex">
+              <div class="ppButDiv">
+                <marquee> <div class="invert song-info"></div></marquee>
+              </div>
+              <div class="ppButDiv">
+                <div class="song-button flex">
+                  <img
+                    width="20"
+                    class="prev invert i1"
+                    src="img/previous.svg"
+                  />
+                  <img width="20" class="play- i1 invert" src="img/play.svg" />
+                  <img width="20" class="next invert i1" src="img/next.svg" />
+                </div>
+              </div>
+              <div class="ppButDiv sound-time flex">
+                <div class="invert song-time"></div>
+                <div class="volume flex">
+                  <img class="invert sound" src="img/sound.svg" />
+                  <div class="range1">
+                    <input type="range" name="volume" id="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="seekbar flex"><div class="circle"></div></div>
+          </div>
+        </center>
+      </div>
+    </div>
+    <div class="footer p">
+      <p class="footerP">
+        Preview of Spotify<br />
+        Sign up to get unlimited Songs and Podcasts with occational ads. No
+        credit card needed.
+      </p>
+
+      <div class="flex footeSign">Sign up for free</div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
