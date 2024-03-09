@@ -116,7 +116,7 @@ async function displayAlbums() {
   //load the playlist while clicking card
   Array.from(document.getElementsByClassName("card")).forEach((e) => {
     e.addEventListener("click", async (item) => {
-      songs = await getSongs(`songs/${item.currentTarget.dataset.folder}`);
+      songs = await getSongs(`https://karthikacharya1.github.io/VibeVerse/songs/${item.currentTarget.dataset.folder}`);
       playsong(songs[0]);
     });
   });
