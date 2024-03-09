@@ -15,7 +15,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
   curFolder = folder;
-  let a = await fetch(`/songs/${folder}/`);
+  let a = await fetch(`songs/${folder}/`);
   let response = await a.text();
 
   let div = document.createElement("div");
@@ -91,7 +91,7 @@ async function displayAlbums() {
       if (folder !== "songs") {
         // get metadata of the folder
 
-        let a = await fetch(`/songs/${folder}/info.json`);
+        let a = await fetch(`songs/${folder}/info.json`);
 
         let response = await a.json();
         container.innerHTML =
