@@ -15,7 +15,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
   curFolder = folder;
-  let a = await fetch(`songs/${folder}/`);
+  let a = await fetch(`https://karthikacharya1.github.io/VibeVerse/${folder}/`);
   let response = await a.text();
 
   let div = document.createElement("div");
@@ -32,7 +32,7 @@ async function getSongs(folder) {
   let songUL = document
     .querySelector(".songs-list")
     .getElementsByTagName("ul")[0];
-  songUL.innerHTML = " ";
+  songUL.innerHTML = "";
   for (const song of songs) {
     let sung = decodeURI(song);
 
@@ -42,7 +42,7 @@ async function getSongs(folder) {
       <img class="invert" src="img/music.svg" />
                 <div class="info">
                   <div>${sung} </div>
-                <div>Karthik</div>
+                 
                 </div>
                   <div class="flex">
                 <img class="invert lib-play" src="img/play.svg" alt=""/>
@@ -74,7 +74,9 @@ const playsong = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-  let a = await fetch("/songs/");
+  let a = await fetch("songs/");
+
+  console.log(a);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
