@@ -74,7 +74,7 @@ const playsong = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-  let a = await fetch("songs/");
+  let a = await fetch("https://karthikacharya1.github.io/VibeVerse/songs/");
 
   console.log(a);
   let response = await a.text();
@@ -93,7 +93,7 @@ async function displayAlbums() {
       if (folder !== "songs") {
         // get metadata of the folder
 
-        let a = await fetch(`songs/${folder}/info.json`);
+        let a = await fetch(`https://karthikacharya1.github.io/VibeVerse/songs/${folder}/info.json`);
 
         let response = await a.json();
         container.innerHTML =
