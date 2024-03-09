@@ -25,7 +25,7 @@ async function getSongs(folder) {
   for (let index = 0; index < as.length; index++) {
     const element = as[index];
     if (element.href.endsWith(".mp3")) {
-      songs.push(element.href.split(`/${folder}/`)[1]);
+      songs.push(element.href.split(`https://karthikacharya1.github.io/VibeVerse/${folder}/`)[1]);
     }
   }
 
